@@ -15,9 +15,11 @@
 
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/MagiskManager)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Eon)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/DotPapers)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Clock)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Calculator)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Browser)
 $(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Messaging)
-$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Music)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Evie)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Mixplorer)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/Vanced)
+$(call add-clean-step, rm -rf $(PRODUCT_OUT)/system/app/GoogleContacts)

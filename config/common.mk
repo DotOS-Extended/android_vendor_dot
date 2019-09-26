@@ -166,15 +166,17 @@ PRODUCT_PACKAGES += \
 
 # dotOS Packages
 PRODUCT_PACKAGES += \
-    Music \
+    Phonograph \
     Gallery2 \
     Clock \
     Calculator \
-    DotPapers \
     Browser \
     AudioFX \
-    Lawnchair \
-    Recorder 
+    Recorder \
+	Evie \
+	Mixplorer \
+	Vanced \
+	GoogleContacts
 
 DOT_CHANGELOG := true
 NO_SQUISHER   := true
@@ -315,7 +317,7 @@ ifeq ($(DOT_OFFICIAL), true)
  	ro.delta.version = $(shell echo "$(DELTA_VER)" | sed 's/<\/\?[^>]\+>//g')
 endif
 
-DOT_VERSION := DOT-N-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(DOT_BUILD)-$(DOT_BUILDTYPE)
+DOT_VERSION := DotOS_Extended-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(DOT_BUILD)-$(DOT_BUILDTYPE)
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.dot.version=$(DOT_VERSION) \
