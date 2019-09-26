@@ -173,10 +173,10 @@ PRODUCT_PACKAGES += \
     Browser \
     AudioFX \
     Recorder \
-	Evie \
-	Mixplorer \
-	Vanced \
-	GoogleContacts
+    Evie \
+    Mixplorer \
+    Vanced \
+    GoogleContacts
 
 DOT_CHANGELOG := true
 NO_SQUISHER   := true
