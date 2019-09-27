@@ -164,9 +164,8 @@ endif
 PRODUCT_PACKAGES += \
     LatinIME
 
-# dotOS Packages
+# dotOSx Packages
 PRODUCT_PACKAGES += \
-    Phonograph \
     Gallery2 \
     Clock \
     Calculator \
@@ -177,7 +176,9 @@ PRODUCT_PACKAGES += \
     Mixplorer \
     Vanced \
 	stellio \
-    GoogleContacts
+    Autostart \
+    GoogleContacts \
+	DownloadProvider
 
 DOT_CHANGELOG := true
 NO_SQUISHER   := true
