@@ -176,6 +176,7 @@ PRODUCT_PACKAGES += \
     Evie \
     Mixplorer \
     Vanced \
+	stellio \
     GoogleContacts
 
 DOT_CHANGELOG := true
