@@ -344,17 +344,12 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 $(call prepend-product-if-exists, vendor/extra/product.mk)
 
-ROOT_METHOD ?= rootless
-ifeq ($(ROOT_METHOD),magisk)
-# MAGISK -Systemless Root
-
 PRODUCT_PACKAGES += \
     MagiskManager
 
 #Magisk.zip
 PRODUCT_COPY_FILES += \
     vendor/dot/prebuilt/zips/Magisk.zip:system/addon.d/Magisk.zip
-endif
 
 # DotExtras
 PRODUCT_PACKAGES += \
