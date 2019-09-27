@@ -178,7 +178,7 @@ PRODUCT_PACKAGES += \
 	stellio \
     Autostart \
     GoogleContacts \
-	DownloadProvider
+    DownloadProvider
 
 DOT_CHANGELOG := true
 NO_SQUISHER   := true
