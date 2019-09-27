@@ -175,7 +175,7 @@ PRODUCT_PACKAGES += \
     Evie \
     Mixplorer \
     Vanced \
-	stellio \
+    stellio \
     Autostart \
     GoogleContacts \
     DownloadProvider
