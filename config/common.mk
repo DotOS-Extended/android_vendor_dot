@@ -319,7 +319,7 @@ ifeq ($(DOT_OFFICIAL), true)
  	ro.delta.version = $(shell echo "$(DELTA_VER)" | sed 's/<\/\?[^>]\+>//g')
 endif
 
-DOT_VERSION := DotOS_Extended-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d-H%M)-$(DOT_BUILD)
+DOT_VERSION := DotOS_Extended-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d-%H%M)-$(DOT_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.dot.version=$(DOT_VERSION) \
