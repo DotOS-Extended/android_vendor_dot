@@ -289,8 +289,8 @@ endif
 
 DEVICE_PACKAGE_OVERLAYS += vendor/dot/overlay/common
 
-PRODUCT_VERSION_MAJOR = 1
-PRODUCT_VERSION_MINOR = 2
+PRODUCT_VERSION_MAJOR = 6
+PRODUCT_VERSION_MINOR = 9
 ifndef DOT_OFFICIAL
     DOT_BUILDTYPE := UNOFFICIAL
 endif
@@ -319,7 +319,7 @@ ifeq ($(DOT_OFFICIAL), true)
  	ro.delta.version = $(shell echo "$(DELTA_VER)" | sed 's/<\/\?[^>]\+>//g')
 endif
 
-DOT_VERSION := DotOS_Extended-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d)-$(DOT_BUILD)-$(DOT_BUILDTYPE)
+DOT_VERSION := DotOS_Extended-v$(PRODUCT_VERSION_MAJOR).$(PRODUCT_VERSION_MINOR)-$(shell date -u +%Y%m%d-H%M)-$(DOT_BUILD)
 
 PRODUCT_PROPERTY_OVERRIDES += \
  ro.dot.version=$(DOT_VERSION) \
